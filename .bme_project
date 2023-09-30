@@ -1,0 +1,14 @@
+# Environment file to be loaded by Bash interactive shell
+#
+# Use this as a reference for your own '.bme_project' files
+
+#---
+# 'MAIN' .bme_project file at the root of your project
+#---
+# Set your project name (must be unique)
+BME_PROJECT_NAME='bme_githooks'
+
+# Modules' activation (modules are disabled by default, so uncomment those you want to enable
+BME_MODULES=(
+	githooks  # adds support for shared client-side git hooks
+)
