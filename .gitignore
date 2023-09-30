@@ -1,0 +1,4 @@
+# githooks-example's '.gitignore' file
+
+# Bash Magic Enviro related
+.bme.d/
