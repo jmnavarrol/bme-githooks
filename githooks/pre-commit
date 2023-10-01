@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+# This is a bare minimal pre-commit hook just to test it works.
+# The hook should exit with non-zero status after issuing an appropriate message if it wants to stop the commit.
+
+# Redirects output to stderr
+exec 1>&2
+
+cat <<\EOF
+This is just a sample pre-commit hook that always fails.
+
+In order for the commit to success, you should bypass it, i.e.:
+`git commit --no-verify...`
+
+For more information on git hooks, see https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
+EOF
+exit 1
